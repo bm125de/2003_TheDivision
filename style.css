@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap');
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 1000vh;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    transition: .25s;
+    background-color: rgb(34, 41, 30);
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 500000px; */
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: black 0px 0px 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header {
+    height: 100vh;
+    background-image: url('block.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.title {
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    animation: header 1s;
+}
+
+.sub-title {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    margin-bottom: 10px;
+    animation: header 1s;
+}
+
+.commm {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.text-a {
+    padding-top: 60vh;
+    /* display: flex;
+    flex-flow: column; */
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.479); */
+}
+
+.nav {
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 200;
+}
+
+.nav-bg {
+    background-color: rgb(53, 61, 48);
+    top: 0;
+    height: 80px;
+    margin-top: -80px;
+}
+
+.nav-li {
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.nav-li>* {
+    height: 100%;
+}
+
+.nav-li a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+@keyframes header {
+    0% {
+        margin-top: -50px;
+        opacity: .0;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.block-1 {
+    color: white;
+    background-color: rgb(19, 20, 17);
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.block-1 .img {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Tom Clancy's The Division 2_20190721_152255.png");
+    height: 700px;
+    width: 60%;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+.block-1 .text {
+    padding: 0 20px;
+    /* background-color: rgba(255, 255, 255, 0.486); */
+    width: 30%;
+    min-width: 600px;
+    position: absolute;
+    left: 8%;
+    top: 45%;
+}
+
+.block-1 .text h1 {
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.block-1 .text p {
+    font-size: 20px;
+    letter-spacing: .5px;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+.block-1 .text .line {
+    width: 80px;
+    border: white solid 5px;
+    margin-bottom: 50px;
+}
+
+.block-2 {
+    position: relative;
+    height: 1400px
+    /* overflow: auto; */
+}
+
+.block-2 .img {
+    background-image: url('ScreenShot00006.png');
+    height: 900px;
+    width: 100%;
+}
+
+.block-2 .filter {
+    position: absolute;
+    top: 0;
+    height: 900px;
+    width: 100%;
+    background: rgb(19, 20, 17);
+    background: linear-gradient(180deg, rgba(19, 20, 17, 1) 0%, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 1) 100%);
+}
+
+.block-2 .text {
+    position: absolute;
+    left: 1%;
+    top: 700px;
+    color: white;
+    /* background-color: rgba(255, 255, 255, 0.425); */
+}
+
+.block-2 .text h2 {
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.block-2 .art {
+    position: absolute;
+    display: flex;
+    padding: 0 10vw;
+    top: 850px;
+    height: 450px;
+    width: 100%;
+}
+
+.block-2 .art .arts {
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    margin: 0 40px;
+    background-color: rgb(19, 29, 17);
+    border: solid #8ca03e 1.5px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.block-2 .art .arts.a {
+    background-image: url("Tom Clancy's The Division 2_20200228_163708.png");
+}
+
+.block-2 .art .arts.b {
+    background-image: url("Tom Clancy's The Division 2_20200228_163708_.png");
+}
+
+.block-2 .art .arts.c {
+    background-image: url("Tom Clancy's The Division 2_20200228_163708__.png");
+}
+
+.block-2 .art .arts .textarea {
+    /* background-color: rgba(255, 255, 255, 0.445); */
+    padding: 35px;
+    position: absolute;
+    top: 50%;
+}
+
+.block-2 .art .arts .textarea h2 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.block-2 .art .arts .textarea p {
+    font-size: 18px;
+    margin: 0;
+}
